@@ -1,0 +1,8 @@
+export ARCH=arm
+export SUBARCH=arm
+export CROSS_COMPILE=/home/nik-kst/Android/utility/arm-eabi-4.8/bin/arm-eabi-
+make clean
+make mrproper
+make O=out TARGET_ARCH=arm hq6580_we_b1a_l_defconfig
+make -j4 O=out TARGET_ARCH=arm
+
